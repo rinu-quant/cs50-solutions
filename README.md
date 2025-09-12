@@ -33,22 +33,21 @@ By completing the problem sets, I aim to:
 
 The repository is organized by problem sets. Each folder contains fully functional solutions, comments explaining the logic, and supporting files if required.
 
-- **pset1**
-  - cash
+- **week1**
+  - credit
   - mario
-  - [other pset1 solutions]
 
-- **pset2**
+- **week2**
   - readability
   - caesar
-  - [other pset2 solutions]
+  - encryption
+  - scribble
 
-- **pset3**
+- **week3**
   - tideman
   - runoff
-  - [other pset3 solutions]
-
-- **README.md**: This file, providing an overview of the repository and instructions
+  - plurality
+  
 
 ---
 
