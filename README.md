@@ -7,7 +7,7 @@ This repo tracks my weekly progress through the CS50 course, showing which probl
 
 ## 🛠 Languages Used
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rinu_quant&repo=cs50-solutions&layout=compact&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rinu-quant&repo=cs50-solutions&layout=compact&theme=tokyonight)
 
 > The chart above **shows the percentage of code written in each language** in this repo automatically.
 
