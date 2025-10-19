@@ -18,7 +18,7 @@ This repo tracks my weekly progress through the CS50 course, showing which probl
 - ✅ **Week 2:** Readability, Caesar, Scribble, Encryption 
 - ✅ **Week 3:** Plurality, Runoff, Tideman 
 - ✅ **Week 4:** Filter-more, Recover, Volume 
-- ✅ **Week 5:** Inheritance 
+- ✅ **Week 5:** Inheritance, speller
 - ⭕ **Week 6:** *To be added* 
 - ⭕ **Week 7:** *To be added* 
 - ⭕ **Week 8:** *To be added* 
