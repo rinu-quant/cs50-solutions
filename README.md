@@ -19,7 +19,7 @@ This repo tracks my weekly progress through the CS50 course, showing which probl
 - ✅ **Week 3:** Plurality, Runoff, Tideman 
 - ✅ **Week 4:** Filter-more, Recover, Volume 
 - ✅ **Week 5:** Inheritance, speller
-- ✅ **Week 6:** Hello, Merio-more 
+- ✅ **Week 6:** Hello, Merio-more, cash
 - ⭕ **Week 7:** *To be added* 
 - ⭕ **Week 8:** *To be added* 
 - ⭕ **Week 9:** *To be added* 
