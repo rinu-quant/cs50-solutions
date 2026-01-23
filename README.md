@@ -20,7 +20,7 @@ This repo tracks my weekly progress through the CS50 course, showing which probl
 - ✅ **Week 4:** Filter-more, Recover, Volume 
 - ✅ **Week 5:** Inheritance, speller
 - ✅ **Week 6:** Hello, Merio-more, cash, credit, Readability,DNA
-- ⭕ **Week 7:** Songs 
+- ⭕ **Week 7:** Songs, Movies 
 - ⭕ **Week 8:** *To be added* 
 - ⭕ **Week 9:** *To be added* 
 - ⭕ **Week 10:** *To be added*
