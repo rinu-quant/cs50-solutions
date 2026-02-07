@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is the approximate ratio of people to sheep in New Zealand? </h3>
+                <div>
+                  <button id="op1">6 people per 1 sheep</button> 
+                  <button id="op2">3 people per 1 sheep</button>
+                  <button id="op3">1 people per 1 sheep</button>
+                  <button id="op4">1 people per 3 sheep</button>
+                  <button id="op5">1 people per 6 sheep</button> 
+                  <p id="result"></p> 
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is the capital of India?</h3>
+                <form>
+                    <input type = "text" id = "tb">
+                    <input type = "submit" value = "Check Answer" id="sb">
+                    <p id="ans"></p>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script>
+            let a1 = document.getElementById("op1");
+            let a2 = document.getElementById("op2");
+            let a3 = document.getElementById("op3");
+            let a4 = document.getElementById("op4");
+            let a5 = document.getElementById("op5");
+            let result = document.getElementById("result");
+            let txt = document.getElementById("tb");
+            let submit = document.getElementById("sb");
+            let ans = document.getElementById("ans");
+
+            a1.addEventListener("click" , function() {
+                a1.style.backgroundColor="red";
+                a1.style.color = "white" ;
+                result.innerHTML = "Incorrect Answer" ;
+            });
+
+            a2.addEventListener("click" , function() {
+                a2.style.backgroundColor="red";
+                a2.style.color = "white" ;
+                result.innerHTML = "Incorrect Answer" ;
+            });
+
+            a3.addEventListener("click" , function() {
+                a3.style.backgroundColor="red";
+                a3.style.color = "white" ;
+                result.innerHTML = "Incorrect Answer" ;
+            });
+
+            a4.addEventListener("click" , function() {
+                a4.style.backgroundColor="red";
+                a4.style.color = "white" ;
+                result.innerHTML = "Incorrect Answer" ;
+            });
+
+            a5.addEventListener("click" , function() {
+                a5.style.backgroundColor="green";
+                a5.style.color = "white" ;
+                result.innerHTML = "Correct Answer" ;
+            });
+
+            submit.addEventListener("click" , function () {
+              event.preventDefault()
+              let text = txt.value ;
+              if ( text === "New Delhi" || text === "new delhi")
+               {
+                  ans.style.color = "green" ;
+                  ans.innerHTML = "Correct Answer" ;
+               }
+              else
+               {
+                  ans.style.color = "red" ;
+                  ans.innerHTML = "Incorrect Answer" ;
+               }
+            });
+        </script>
+</html>
