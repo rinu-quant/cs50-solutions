@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My CONTACT</title>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <a href="index.html" class="btn btn-primary">HOME</a>
+                <a href="skills.html" class="btn btn-primary">SKILLS</a>
+                <a href="contact.html" class="btn btn-primary">CONTACT</a>
+                <a href="about.html"  class="btn btn-primary">ABOUT</a>
+            </div>
+        </nav>
+        <h1>CONTACT<h1>
+        <p>You can reach me using the form below</p>
+        <form>
+            <textarea id="message" placeholder="Type your messages here."></textarea>
+            <input type="submit" value="send" id="q">
+            <p id="x"></p>
+        </form>
+    </body>
+    <script>
+        let message = document.getElementById("q");
+        let submitted = document.getElementById("x");
+         message.addEventListener("click",function ()
+           {
+             event.preventDefault()
+             x.innerHTML="successfully send your message";
+           });
+
+    </script>
+</html>
