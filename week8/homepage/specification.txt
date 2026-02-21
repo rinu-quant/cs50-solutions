@@ -1,0 +1,32 @@
+HTML Tags Used
+<html>
+<head>
+<body>
+<title>
+<nav>
+<h1>
+<p>
+<ul>
+<li>
+<footer>
+<textarea>
+
+CSS Selectors Used
+#message          → textarea
+nav               → navbar (display: flex)
+p                 → paragraphs
+h1                → headings
+footer            → footer background-color #333
+
+CSS Properties Used
+width             → #message
+height            → #message
+padding           → #message / footer
+color             → text color for p, h1, footer
+background-color  → footer
+
+Bootstrap Usage:
+Used Bootstrap to style the page with <div class="container"> for layout and <button class="btn btn-primary"> for interactivity.
+
+JavaScript Usage:
+Used JS on the contact page to display "Your message sent successfully" when the submit button is clicked, demonstrating interactivity without requiring a backend.
