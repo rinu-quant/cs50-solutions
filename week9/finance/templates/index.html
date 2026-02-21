@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    PORTFOLIO
+{% endblock %}
+
+{% block main %}
+   
+    <br><br>
+
+    <table class = "table table-stripped">
+        <thead>
+            <tr>
+                <th class="text-start px-3">Symbol</th>
+                <th class="text-start px-3">Shares</th>
+                <th class="text-end px-3">Price</th>
+                <th class="text-end px-3">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in portfolio %}
+            <tr>
+                <td class="text-start px-3"> {{stock.symbol}} </td>
+                <td class="text-start px-3"> {{stock.total_shares}} </td>
+                <td class="text-end px-3"> {{stock.price | usd}} </td>
+                <td class="text-end px-3"> {{stock.total | usd}} </td>
+            </tr>
+            {% endfor %}
+       </tbody>
+       <tfoot>
+            <tr>
+                <td class="text-end border-0" ></td>
+                <td class="text-end border-0" ></td>
+                
+                <td class="text-end border-0" ><strong>CASH</strong></td>
+                <td class="text-end border-0" > {{cash | usd}} </td>
+            </tr>
+
+             <tr>
+                <td class="text-end border-0" ></td>
+                <td class="text-end border-0" ></td>
+                <td class="text-end border-0" ><strong>TOTAL</strong></td>
+                <td class="text-end border-0" > {{grand_total | usd}} </td>
+            </tr>
+
+       </tfoot>
+    </table>
+
+   
+{% endblock %}
+
