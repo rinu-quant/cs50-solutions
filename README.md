@@ -23,7 +23,7 @@ This repo tracks my weekly progress through the CS50 course, showing which probl
 - ✅ **Week 7:** Songs, Movies, Fiftyville
 - ✅ **Week 8:** Trivia, Homepage
 - ✅ **Week 9:** Birthdays, Finance
-- ⭕ **Week 10:** *To be added*
+- ✅ **Week 10:** Tradesim
 
 > ✅ = Submitted solution
 > ⭕ = Pending solution
