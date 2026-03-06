@@ -1,0 +1,37 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+BACKTESTING ENGINE V1.0
+{% endblock %}
+
+{% block main %}
+
+<h1>Backtest Simulator</h1>
+<div class="container">
+    <form method="post">
+
+         <select class="form-select" id="stock" name="stock">
+            <option value="AAPL">AAPL</option>
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+         </select>
+
+        <select class="form-select" id="strategy" name="strategy">
+            <option value="Momentum">Momentum</option>
+            <option value="Mean_Reversion">Mean Reversion</option>
+            <option value="RSI_Strategy">RSI Strategy</option>
+        </select>
+
+        <input  autocomplete="off"  autofocus name="capital" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="eg:- 10000">
+
+        <input name="start_date" type="date">
+        <input name="end_date" type="date">
+ 
+        <button type="submit" class="btn btn-primary">Run Backtest</button>
+    </form>
+</div>
+
+{% endblock %}
+
+

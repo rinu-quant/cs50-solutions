@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+RESULT
+{% endblock %}
+
+{% block main %}
+
+<div class = "result">
+    <h2>Backtest Result</h2>
+    <p>Final Capital: {{ final_capital }}</p>
+</div>
+
+<a href="/history">View Trade History</a>
+<a href="/">Run Another Backtest</a>
+
+{% endblock %}
