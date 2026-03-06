@@ -1,7 +1,5 @@
                                      Backtesting Engine
 
-# Video url :
-
 # Description:
 
 This project is a Backtesting Engine that simulates trading strategies on historical stock data. The main purpose of this project is to understand how different strategies perform over a specified period and how capital would change if those strategies were applied.
