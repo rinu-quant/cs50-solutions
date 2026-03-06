@@ -70,6 +70,8 @@ def buy():
             shares = int(shares)
         except ValueError :
             return apology("shares must be integer")
+        if shares < 0 :
+            return apology("shares must be positive integer")
         
         price = result["price"]
         req_cash = shares*price
@@ -165,16 +167,16 @@ def register():
         hash = generate_password_hash(password)
 
         if not username:
-            return apology("must provide username", 403)
+            return apology("must provide username")
         if not password:
-            return apology("must provide password", 403)
+            return apology("must provide password")
         if password != confirmation:
-            return apology("password doesn't match", 403)
+            return apology("password doesn't match")
         
         try:
             db.execute("INSERT INTO users (username,hash) VALUES (?,?)",username,hash)
         except ValueError:
-            return apology("username already exists", 403)
+            return apology("username already exists")
 
 
         rows = db.execute("SELECT * FROM users WHERE username = ? ",username)
@@ -227,15 +229,15 @@ def password():
         confirm_pass = request.form.get("confirm")
 
         if not old_pass:
-            return apology("must provide old password", 403)
+            return apology("must provide old password")
         if not new_pass:
-            return apology("must provide new password", 403)
+            return apology("must provide new password")
         if new_pass != confirm_pass:
-            return apology("password doesn't match", 403)
+            return apology("password doesn't match")
 
         rows = db.execute("SELECT * FROM users WHERE id = ? ",session["user_id"])
         if not check_password_hash(rows[0]["hash"], old_pass):
-            return apology("wrong password entered", 403)
+            return apology("wrong password entered")
 
         new_hash = generate_password_hash(new_pass)
         db.execute("UPDATE users SET hash = ? WHERE id = ? ",new_hash,session["user_id"])
